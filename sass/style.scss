@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+$blanco:#ffffff;
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    header{
+        .contenedor{
+            background-color: #3532db;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            align-items: center;
+            .nombre{
+                width: 49%;
+                margin: 0 50px;
+                text-align: center;
+                h1{
+                    color: $blanco;
+                    text-align: right;
+                    font-weight: bold;
+                }
+            }
+            .especialidad{
+                width: 49%;
+                margin: 0 50px;
+                h2
+                {
+                    color: $blanco;
+                    text-align: left;
+                    font-weight: normal;
+                }
+            }
+        }
+        .experiencia{
+            background-color: #d6314c;
+            text-align: center;
+            padding: 10px;
+            span{
+                font-size: 18px;
+                font-weight: bold;
+                padding: 20px;
+            }
+        }
+    }
+    .principal{
+        width: 90%;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+        .main{
+            article{
+                .contenido{
+                    margin-top: 20px;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    display: flex;
+                    flex-direction: row;            
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .formacion{
+                        width: 60%;
+                        margin-bottom: 20px;
+                        h1{
+                            font-weight: bold;
+                            font-size: 25px;
+                            margin-bottom: 25px;
+                        }
+                        ul{
+                            list-style: none;
+                            margin-bottom: 20px;
+                            li{
+                                margin-top: 10px;
+                                font-size: 20px;
+                                text-transform: uppercase;
+                                margin-bottom: 10px;
+                            }
+                            span{
+                                padding-bottom: 20px;
+                            }
+                        }
+                    }
+                    .foto{
+                        width: 40%;
+                        img{
+                            width: 300px;
+                            background-color: rgba(#f2f2f2, 0.7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .redes_sociales{
+            background-color: #1e2b38;
+            .redes{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                a{
+                    color: #ffffff;
+                    width: 100px;
+                    text-align: center;
+                    vertical-align: top;
+                    padding: 15px 0px;
+                    border-radius: 3px;
+                    font-size: 30px;
+                    margin: 20px 20px;
+                }
+                .facebook:hover{
+                    background-color:#3b5998;
+                }
+                .twitter:hover{
+                    background-color: #1da1f2;
+                }
+                .linkedin:hover{
+                    background-color: #00a0dc;
+                }
+                .github:hover{
+                    background-color: #4078c0;
+                }
+                .gitlab:hover{
+                    background-color: #f77737;
+                }
+
+            }
+        }
+    }
+    
+}
